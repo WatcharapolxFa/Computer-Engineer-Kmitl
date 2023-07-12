@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    printf("%-80s\n", "Hello, world!");
-    printf("%-80s\n", "Hello, Ladkrabang");
-    printf("%-80s\n", "Hello, Computer Programming");
-    printf("%-8s%8s%8s%8s%8s%12s\n", "one", "two", "three", "four", "five", "Hallelujah");
-    printf("%-8s%8s%8s%8s%8s\n", "12345678", "12345678", "12345678", "12345678", "12345678");
-    printf("%8s%8s%8s%8s%8s\n", "12345678", "12345678", "12345678", "12345678", "12345678");
+    printf("Hello, world!\n");
+    printf("Hello, Ladkrabang\n");
+    printf("Hello, Computer Programming\n");
+    printf("one\ttwo\tthree\tfour\tfive\tHallelujah\n");
+    printf("12345678\t12345678\t12345678\t12345678\t12345678\n");
+    printf("\t12345678\t12345678\t12345678\t12345678\t12345678\n");
 
     return 0;
 }
