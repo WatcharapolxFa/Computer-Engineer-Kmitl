@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+      section {
+        margin: 1.5rem 0;
+      }
+
+      section > h2 {
+        margin-bottom: 0.7rem;
+      }
+
+      section > img {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      section:nth-child(1) > p {
+        margin: 0.7rem 0;
+      }
+
+      section:nth-child(1) > h1 {
+        font-size: 2rem;
+      }
+
+      .grid {
+            margin: 1rem 0;
+            display: grid;
+        }
+
+      .introduction-grid {
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 40px 40px 40px 40px;
+      }
+
+      .introduction-grid > p {
+        width: fit-content;
+      }
+
+      .drama-grid-4 {
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+      }
+
+      .drama-grid-4 > .span-2 {
+        grid-column: span 2;
+      }
+
+      .drama-grid-3 {
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+      }
+
+      #conclusion > h2 {
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <section id="header">
+        <h1>SW Studio TODAY</h1>
+        <p>Life of students who study Software Studio.</p>
+        <p>reported by Mr.XxX</p>
+      </section>
+      <section id="content">
+        <h2>Contents</h2>
+        <a href="#introduction">
+          <li>Introduction</li>
+        </a>
+        <a href="#drama">
+          <li>Drama 1</li>
+        </a>
+        <a href="#conclusion">
+          <li>Conclusion</li>
+        </a>
+      </section>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <div class="introduction-grid">
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+          <p>intro</p>
+        </div>
+        <a href="#content">back to Contents</a>
+      </section>
+      <section id="drama">
+        <h2>Drama 1</h2>
+        <div class="drama-grid-4">
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p class="span-2">drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p class="span-2">Fri 7, 2020</p>
+        </div>
+        <img
+          src="https://cdnb.artstation.com/p/assets/images/images/039/196/975/medium/labuu-20210630xx.jpg?1625206703"
+          alt="Illustration from ArtStation"
+        />
+        <p>image's description bla bla</p>
+        <div class="drama-grid-3">
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+          <p>drama</p>
+        </div>
+        <a href="#content">back to Content</a>
+      </section>
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>conclusion 1</p>
+        <p>conclusion 2</p>
+        <p>conclusion 3</p>
+        <br />
+        <a href="#content">back to Content</a>
+      </section>
+      <section>ce.kmitl all rights reserved & copyright 2020</section>
+    </div>
+  </body>
+</html>
