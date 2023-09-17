@@ -1,10 +1,157 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <div id="maincontainer"></div>
-        <script>
+  <head></head>
+  <body>
+    <div id="maincontainer"></div>
+    <script>
+      const studentInfo = {
+        StudentIdentity:
+          "Name and Student ID : Watcharapol Yotadee ,ID: 63010870",
+        CourseTitle: "Course name : Software Studio",
+        StudyTerm: "Term studied : (1/2566)",
+      };
 
-        </script>
-    </body>
+      const imageLinks = {
+        Fireworks:
+          "https://i.pinimg.com/564x/06/99/c2/0699c21dc9531e610a28cea46886314b.jpg",
+        Crest:
+          "https://i.pinimg.com/564x/18/44/b5/1844b595d565a94633a5c6d24a73e306.jpg",
+        Action:
+          "https://i.pinimg.com/564x/1d/09/b6/1d09b6860160e069e35f256a09a15f6d.jpg",
+        Buffalo:
+          "https://i.pinimg.com/564x/09/93/65/0993656c6683183ff342f7eb50e8c543.jpg",
+      };
+
+      const maincontainer = document.getElementById("maincontainer");
+
+      function createHeader() {
+        let header = document.createElement("h1");
+        header.setAttribute("id", "newdiv");
+        header.innerHTML = "Exercise 04: JavaScript&DOM";
+        header.style = "color: black; font-size: 40px;";
+        maincontainer.appendChild(header);
+      }
+
+      function createDateTimeDisplayButton() {
+        let dateTimeBtn = document.createElement("button");
+        dateTimeBtn.setAttribute("id", "dateTimeDisplayButton");
+        dateTimeBtn.innerHTML = "Click me to display Date and Time";
+        dateTimeBtn.style =
+          "color: black; font-size: 25px; position: absolute;";
+
+        let isDateTimeDisplayed = false;
+        let dateTimeWorker;
+
+        dateTimeBtn.addEventListener("click", function () {
+          if (!isDateTimeDisplayed) {
+            isDateTimeDisplayed = true;
+            dateTimeWorker = new Worker("display_worker.js");
+            dateTimeWorker.postMessage(isDateTimeDisplayed);
+            dateTimeWorker.onmessage = (event) => {
+              dateTimeBtn.setAttribute("style", event.data.style);
+              dateTimeBtn.innerHTML = event.data.date;
+              dateTimeBtn.style.backgroundColor = event.data.background;
+              dateTimeBtn.style.color = event.data.color;
+            };
+          } else {
+            dateTimeWorker.terminate();
+            isDateTimeDisplayed = false;
+            dateTimeBtn.style.top = dateTimeBtn.style.right = "auto";
+            dateTimeBtn.style.position = "absolute";
+          }
+        });
+
+        maincontainer.appendChild(dateTimeBtn);
+      }
+      function createInfoLink() {
+    let divInfo = document.createElement("div");
+    divInfo.setAttribute("id", "div_info");
+    divInfo.style = "color: black; font-size: 20px; margin-top: 100px;";
+
+    let infoLink = document.createElement("a");
+    infoLink.href = "#";
+    infoLink.setAttribute("id", "info");
+    infoLink.innerHTML = "Personal Info";
+    infoLink.style = "color: #FFB4DA; font-size: 20px;";
+
+    infoLink.onmouseover = function () {
+        this.style.backgroundColor = "yellow";
+        this.style.color = "blue";
+    };
+
+    infoLink.onmouseout = function () {
+        this.style.backgroundColor = "transparent";
+        this.style.color = "#FFB4DA";
+    };
+
+    infoLink.onclick = function () {
+        let existingList = divInfo.querySelector("ul");
+        if (!existingList) {
+            let infoList = document.createElement("ul");
+            for (const [key, value] of Object.entries(studentInfo)) {
+                let listItem = document.createElement("li");
+                listItem.innerHTML = `${value}`;
+                infoList.appendChild(listItem);
+            }
+            divInfo.appendChild(infoList);
+        } else {
+            divInfo.removeChild(existingList);
+        }
+    };
+
+    divInfo.appendChild(infoLink);
+    maincontainer.appendChild(divInfo);
+}
+
+
+      function createSnapshotSection() {
+        let snapshotDiv = document.createElement("div");
+        snapshotDiv.setAttribute("id", "div_snapshot");
+        snapshotDiv.style = "color: black; font-size: 20px;";
+
+        let snapshotHeader = document.createElement("h1");
+        snapshotHeader.innerHTML = "Snapshots";
+        snapshotHeader.style.marginBottom = "0px";
+
+        snapshotDiv.appendChild(snapshotHeader);
+        maincontainer.appendChild(snapshotDiv);
+
+        let snapshotList = document.createElement("ul");
+        snapshotList.style.marginTop = "0px";
+
+        for (const [key, value] of Object.entries(imageLinks)) {
+          let item = document.createElement("li");
+          let link = document.createElement("a");
+          link.setAttribute("id", key);
+          link.href = "#";
+          link.style = "color: blue; font-size: 16px;";
+          link.innerHTML = key;
+          link.onclick = function () {
+            image.src = value;
+            image.style.width = "1000px";
+            image.style.height = "auto";
+          };
+
+          item.appendChild(link);
+          snapshotList.appendChild(item);
+        }
+
+        let image = new Image(1000, 300);
+        image.src =
+          "https://static.trueplookpanya.com/cmsblog/1873/73873/banner_file.jpg";
+
+        snapshotDiv.appendChild(snapshotList);
+        snapshotDiv.appendChild(image);
+      }
+
+      function init() {
+        createHeader();
+        createDateTimeDisplayButton();
+        createInfoLink();
+        createSnapshotSection();
+      }
+
+      init();
+    </script>
+  </body>
 </html>
