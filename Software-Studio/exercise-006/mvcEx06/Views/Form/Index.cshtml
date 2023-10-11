@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Exercise 2";
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="~/css/site.css"> <!-- ลิงก์ไปยังไฟล์ CSS ที่คุณมี -->
+</head>
+
+<body>
+    <div class="container">
+        @using (Html.BeginForm("Submit", "Form", FormMethod.Post))
+        {
+            <section id="contact">
+                <div class="description">Contact Information</div>
+                <div class="input-group">
+                    <label for="inp-firstname">First name: </label>
+                    <input id="inp-firstname" name="firstname" type="text" required="required" value="@ViewBag.FirstName" />
+                </div>
+                <div class="input-group">
+                    <label for="inp-lastname">Last name: </label>
+                    <input id="inp-lastname" name="lastname" type="text" required="required" value="@ViewBag.LastName" />
+                </div>
+                <div class="input-group">
+                    <label for="inp-email">E-mail: </label>
+                    <input id="inp-email" name="email" type="text" required="required" value="@ViewBag.Email" />
+                </div>
+            </section>
+
+            <section id="competition">
+                <div class="description">Competition Question</div>
+                <h2>How tall is the Eiffel Tower in Paris, France?</h2>
+                <!-- ใช้ Razor เพื่อเลือก radio ตามคำตอบของ user -->
+                <div><input type="radio" name="c1" value="584ft" @(ViewBag.C1 == "584ft" ? "checked" : "") /> 584ft</div>
+                <div><input type="radio" name="c1" value="784ft" @(ViewBag.C1 == "784ft" ? "checked" : "") /> 784ft</div>
+                <div><input type="radio" name="c1" value="984ft" @(ViewBag.C1 == "984ft" ? "checked" : "") /> 984ft</div>
+                <div><input type="radio" name="c1" value="1184ft" @(ViewBag.C1 == "1184ft" ? "checked" : "") /> 1184ft</div>
+            </section>
+
+            <section id="tiebreaker">
+                <div class="description">Tiebreaker Question</div>
+                <h2>In 25 words or less, say why you would like to win $10,000:</h2>
+                <textarea name="inputTiebreaker" id="" cols="50" rows="10">@ViewBag.InputTiebreaker</textarea>
+            </section>
+
+            <section>
+                <div class="description">Enter Competition</div>
+                <button type="submit">Enter Competition</button>
+            </section>
+        }
+
+        <!-- แสดงข้อมูลที่ user ส่งมา (ถ้ามี) -->
+        @if (!string.IsNullOrEmpty(ViewBag.FirstName))
+        {
+            <section>
+                <h2>Submitted Data:</h2>
+                <p><strong>First Name:</strong> @ViewBag.FirstName</p>
+                <p><strong>Last Name:</strong> @ViewBag.LastName</p>
+                <p><strong>Email:</strong> @ViewBag.Email</p>
+                <p><strong>Answer:</strong> @ViewBag.C1</p>
+                <p><strong>Reason:</strong> @ViewBag.InputTiebreaker</p>
+            </section>
+        }
+    </div>
+</body>

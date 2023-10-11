@@ -1,23 +1,21 @@
-using Microsoft.AspNetCore.Mvc;
-
-namespace mvcEx06.Controllers
+using Microsoft.AspNetCore.Mvc; 
+public class FormController : Controller
 {
-    public class FormController : Controller
+    public IActionResult Index()
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
+        return View();
+    }
 
-        [HttpPost]
-        public ActionResult Submit(string firstname, string lastname, string email, string c1, string inputTiebreaker)
-        {
-            ViewBag.Firstname = firstname;
-            ViewBag.Lastname = lastname;
-            ViewBag.Email = email;
-            ViewBag.C1 = c1;
-            ViewBag.InputTiebreaker = inputTiebreaker;
-            return View("Index");
-        }
+    [HttpPost]
+    public IActionResult Submit(string firstname, string lastname, string email, string c1, string inputTiebreaker)
+    {
+        // จัดเก็บข้อมูลลงใน ViewBag
+        ViewBag.FirstName = firstname;
+        ViewBag.LastName = lastname;
+        ViewBag.Email = email;
+        ViewBag.C1 = c1;
+        ViewBag.InputTiebreaker = inputTiebreaker;
+
+        return View("Index"); // ส่งกลับไปยัง view เดิม แต่แสดงผลข้อมูล
     }
 }

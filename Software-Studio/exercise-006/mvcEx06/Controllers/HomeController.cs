@@ -18,16 +18,11 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpPost]
-    public IActionResult OnEnterCompetition(string fname, string lname, string email, string heights, string answer)
+    public IActionResult Privacy()
     {
-        ViewBag.fname = fname;
-        ViewBag.lname = lname;
-        ViewBag.email = email;
-        ViewBag.heights = heights;
-        ViewBag.answer = answer;
         return View();
     }
+    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

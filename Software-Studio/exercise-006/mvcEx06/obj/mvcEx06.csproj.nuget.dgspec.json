@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06.csproj": {}
+    "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06/mvcEx06.csproj": {}
   },
   "projects": {
-    "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06.csproj": {
+    "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06/mvcEx06.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06.csproj",
+        "projectUniqueName": "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06/mvcEx06.csproj",
         "projectName": "mvcEx06",
-        "projectPath": "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06.csproj",
+        "projectPath": "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06/mvcEx06.csproj",
         "packagesPath": "/Users/watcharapolyotadee/.nuget/packages/",
-        "outputPath": "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/obj/",
+        "outputPath": "/Users/watcharapolyotadee/Desktop/Computer-Engineer-Kmitl/Software-Studio/exercise-006/mvcEx06/mvcEx06/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/watcharapolyotadee/.nuget/NuGet/NuGet.Config"
