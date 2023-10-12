@@ -1,18 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
-    int ratings[5];
-    printf("Enter 5 rating : ");
-    for (int i = 0; i < 5; i++)
-        scanf("%d", &ratings[i]);
-    sort(ratings);
-    printf("Sorted : ");
-    for (int i = 0; i < 5; i++)
-        printf("%d ", ratings[i]);
-}
-
-void sort(int ratings[])
+void sort(int ratings[]) // น้อยไปมาก
 {
     int temp;
     for (int i = 0; i < 5; i++)
@@ -24,3 +12,39 @@ void sort(int ratings[])
                 ratings[j] = temp;
             }
 }
+
+// void sort(int ratings[])
+// {
+//     int temp;
+//     for (int i = 0; i < 5; i++)
+//         for (int j = i + 1; j < 5; j++)
+//             if (ratings[i] < ratings[j])
+//             {
+//                 temp = ratings[i];
+//                 ratings[i] = ratings[j];
+//                 ratings[j] = temp;
+//             }
+// } มากไปน้อย
+
+int main()
+{
+    int ratings[5];
+    printf("Enter 5 rating : ");
+    for (int i = 0; i < 5; i++)
+        scanf("%d", &ratings[i]);
+    sort(ratings);
+    printf("Sorted : ");
+    for (int i = 0; i < 5; i++)
+        printf("%d ", ratings[i]);
+}
+/**** โปรแกรมนี้มีวัตถุประสงค์ในการรับคะแนน (ratings) จากผู้ใช้ 5 ค่า และจัดเรียงคะแนนเหล่านี้จากน้อยไปมาก จากนั้นแสดงคะแนนที่ถูกจัดเรียงให้ผู้ใช้ดู โดยการทำงานของโปรแกรมมีดังนี้:
+
+โปรแกรมจะประกาศอาร์เรย์ ratings ที่มีขนาด 5 สมาชิก เพื่อเก็บคะแนนที่ผู้ใช้ป้อน.
+
+โปรแกรมจะแสดงข้อความ "Enter 5 rating : " เพื่อขอให้ผู้ใช้ป้อนคะแนน 5 ค่า โดยใช้ลูป for เพื่อรับคะแนนแต่ละค่าผ่านฟังก์ชัน scanf และเก็บค่าคะแนนในอาร์เรย์ ratings.
+
+หลังจากผู้ใช้ป้อนคะแนนทั้ง 5 ค่า, โปรแกรมจะเรียกใช้ฟังก์ชัน sort เพื่อจัดเรียงคะแนนในอาร์เรย์ ratings.
+
+ในฟังก์ชัน sort, โปรแกรมจะใช้การเรียงคะแนนแบบ "bubble sort" โดยใช้ลูป for ซ้อนกันสองชั้นเพื่อเปรียบเทียบและสลับคะแนนในกรณีที่คะแนนในตำแหน่ง i มากกว่าคะแนนในตำแหน่ง j โดยใช้ตัวแปร temp เพื่อทำการสลับค่าคะแนน.
+
+หลังจากที่ฟังก์ชัน sort สำเร็จการเรียงคะแนน โปรแกรมจะแสดงข้อความ "Sorted : " เพื่อแสดงคะแนนที่ถูกจัดเรียง โดยใช้ลูป for เพื่อแสดงค่าคะแนนที่ถูกจัดเรียงและคั่นด้วยช่องว่าง. ***/
