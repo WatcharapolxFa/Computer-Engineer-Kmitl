@@ -64,45 +64,44 @@
         maincontainer.appendChild(dateTimeBtn);
       }
       function createInfoLink() {
-    let divInfo = document.createElement("div");
-    divInfo.setAttribute("id", "div_info");
-    divInfo.style = "color: black; font-size: 20px; margin-top: 100px;";
+        let divInfo = document.createElement("div");
+        divInfo.setAttribute("id", "div_info");
+        divInfo.style = "color: black; font-size: 20px; margin-top: 100px;";
 
-    let infoLink = document.createElement("a");
-    infoLink.href = "#";
-    infoLink.setAttribute("id", "info");
-    infoLink.innerHTML = "Personal Info";
-    infoLink.style = "color: #FFB4DA; font-size: 20px;";
+        let infoLink = document.createElement("a");
+        infoLink.href = "#";
+        infoLink.setAttribute("id", "info");
+        infoLink.innerHTML = "Personal Info";
+        infoLink.style = "color: #FFB4DA; font-size: 20px;";
 
-    infoLink.onmouseover = function () {
-        this.style.backgroundColor = "yellow";
-        this.style.color = "blue";
-    };
+        infoLink.onmouseover = function () {
+          this.style.backgroundColor = "yellow";
+          this.style.color = "blue";
+        };
 
-    infoLink.onmouseout = function () {
-        this.style.backgroundColor = "transparent";
-        this.style.color = "#FFB4DA";
-    };
+        infoLink.onmouseout = function () {
+          this.style.backgroundColor = "transparent";
+          this.style.color = "#FFB4DA";
+        };
 
-    infoLink.onclick = function () {
-        let existingList = divInfo.querySelector("ul");
-        if (!existingList) {
+        infoLink.onclick = function () {
+          let existingList = divInfo.querySelector("ul");
+          if (!existingList) {
             let infoList = document.createElement("ul");
             for (const [key, value] of Object.entries(studentInfo)) {
-                let listItem = document.createElement("li");
-                listItem.innerHTML = `${value}`;
-                infoList.appendChild(listItem);
+              let listItem = document.createElement("li");
+              listItem.innerHTML = `${value}`;
+              infoList.appendChild(listItem);
             }
             divInfo.appendChild(infoList);
-        } else {
+          } else {
             divInfo.removeChild(existingList);
-        }
-    };
+          }
+        };
 
-    divInfo.appendChild(infoLink);
-    maincontainer.appendChild(divInfo);
-}
-
+        divInfo.appendChild(infoLink);
+        maincontainer.appendChild(divInfo);
+      }
 
       function createSnapshotSection() {
         let snapshotDiv = document.createElement("div");
@@ -155,3 +154,31 @@
     </script>
   </body>
 </html>
+<!-- กำหนดข้อมูลส่วนตัวของนักเรียน:
+
+สร้าง object studentInfo เพื่อเก็บข้อมูลส่วนตัวของนักเรียน เช่น ชื่อ, รหัสนักเรียน, ชื่อวิชา, และภาคเรียน
+กำหนดลิงค์ภาพถ่าย:
+
+สร้าง object imageLinks เพื่อเก็บลิงค์ของภาพถ่ายต่าง ๆ
+สร้างฟังก์ชัน createHeader:
+
+สร้างหัวเรื่องหลักที่เรียกว่า "Exercise 04: JavaScript&DOM" และเพิ่มลงบนหน้าเว็บ
+สร้างฟังก์ชัน createDateTimeDisplayButton:
+
+สร้างปุ่มที่เมื่อคลิก, จะแสดงวันที่และเวลาปัจจุบัน
+ใช้ Web Worker (display_worker.js) เพื่อจัดการการแสดงผลวันที่และเวลา
+สร้างฟังก์ชัน createInfoLink:
+
+สร้างลิงก์ที่เมื่อคลิก, จะแสดงข้อมูลส่วนตัวของนักเรียน
+เมื่อเลื่อนเมาส์ไปบนลิงค์, สีของลิงค์จะเปลี่ยนแปลง
+เมื่อคลิกลิงค์, จะแสดงหรือซ่อนข้อมูลส่วนตัวของนักเรียน
+สร้างฟังก์ชัน createSnapshotSection:
+
+แสดงหัวเรื่อง "Snapshots" และแสดงรายการลิงค์ของภาพถ่าย
+เมื่อคลิกลิงค์ของภาพถ่าย, จะแสดงภาพถ่ายที่เลือกบนหน้าเว็บ
+ฟังก์ชัน init:
+
+เป็นฟังก์ชันเริ่มต้น ซึ่งจะเรียกฟังก์ชันอื่น ๆ เพื่อสร้างโครงสร้างของหน้าเว็บ
+เมื่อโหลดหน้าเว็บเสร็จสิ้น:
+
+เรียกฟังก์ชัน init() เพื่อเริ่มต้นการแสดงผลบนหน้าเว็บ -->
