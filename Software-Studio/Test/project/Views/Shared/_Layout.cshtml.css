@@ -1,0 +1,40 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+section {
+  margin: 1.5rem 0;
+  border: 2px solid #000000;
+  padding: 1rem;
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+section > .description {
+  background-color: #ffffff;
+  padding: 0 0.3rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(-15px);
+  font-style: italic;
+}
+
+section > h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+section > button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
