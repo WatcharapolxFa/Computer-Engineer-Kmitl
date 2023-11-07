@@ -1,0 +1,1 @@
+int Primecheck(int x);
