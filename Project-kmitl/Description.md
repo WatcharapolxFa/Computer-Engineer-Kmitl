@@ -33,3 +33,8 @@ feature : Porvider App
 - widgets button,textfild
 (06-02-2024)
 --------------------------------------------
+feature : Porvider App
+- connect API login flow, register flow, forgot password flow, add parking list flow
+- register parkking area
+(07-02-2024)
+--------------------------------------------
