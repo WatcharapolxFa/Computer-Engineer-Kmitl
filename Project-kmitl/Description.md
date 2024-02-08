@@ -38,3 +38,14 @@ feature : Porvider App
 - register parkking area
 (07-02-2024)
 --------------------------------------------
+feature : Porvider App
+- connect API  create parking list (google map)
+- parking detail edit
+- navbar 
+(08-02-2024)
+--------------------------------------------
+feature : Porvider App
+- connect Aws Send pictures to keep
+- connect API map postal code
+- parkin chat
+(09-02-2024)
