@@ -48,4 +48,6 @@ feature : Porvider App
 - connect Aws Send pictures to keep
 - connect API map postal code
 - parking chat
+feature : customer App
+- notic list 
 (09-02-2024)
