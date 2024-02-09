@@ -51,7 +51,7 @@ feature : Customer App
 fix: 
 - mylocation screen
 - button booking
-- history screen
+- reward screen
 (09-02-2024)
 --------------------------------------------
 feature : Porvider App
