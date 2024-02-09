@@ -44,10 +44,22 @@ feature : Porvider App
 - navbar 
 (08-02-2024)
 --------------------------------------------
+feature : Customer App
+- fav Parking Area
+- Chat between Customer & Provider
+- reward
+fix: 
+- mylocation screen
+- button booking
+- history screen
+(09-02-2024)
+--------------------------------------------
 feature : Porvider App
 - connect Aws Send pictures to keep
 - connect API map postal code
 - parking chat
 feature : customer App
 - notic list 
-(09-02-2024)
+fix : customer App
+- summary
+(10-02-2024)
