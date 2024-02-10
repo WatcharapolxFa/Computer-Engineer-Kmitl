@@ -1,12 +1,12 @@
 # Study materials and homework problem files
 https://www.notion.so/Software-Studio-e933b7e51cde4e21956faed6e103c541?pvs=4
 
-feature : customer App
+feature : Customer App
 - connect API Reseat password
 - connect API authentication password
 (02-02-2024)
 --------------------------------------------
-feature : customer App
+feature : Customer App
 - chat page
 - connect Socket IO chat
 - connect API chat log
@@ -22,8 +22,7 @@ feature : Porvider App
 - two factor authen page
 - Login page
 - forgot password page
-
-feature : customer App
+feature : Customer App
 - notification list page
 - popup noti 
 (05-02-2024)
@@ -47,8 +46,6 @@ feature : Porvider App
 feature : Customer App
 - fav Parking Area
 - Chat between Customer & Provider
-- reward
-fix: 
 - mylocation screen
 - button booking
 - reward screen
@@ -57,9 +54,15 @@ fix:
 feature : Porvider App
 - connect Aws Send pictures to keep
 - connect API map postal code
-- parking chat
-feature : customer App
-- notic list 
-fix : customer App
-- summary
+feature : Customer App
+- notic list
+- notic detail
 (10-02-2024)
+--------------------------------------------
+feature : Porvider App
+- parking chat UI
+- income UI
+feature : Customer App
+- summary UI 
+(11-02-2024)
+--------------------------------------------
