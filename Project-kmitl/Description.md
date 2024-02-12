@@ -60,12 +60,25 @@ feature : Customer App
 - notic detail
 (10-02-2024)
 --------------------------------------------
-feature : Porvider App
-- parking chat UI
-- income UI
-- connect API map postal code
-
 feature : Customer App
-- summary UI 
+- welcome 
 (11-02-2024)
 --------------------------------------------
+feature : Porvider App
+- parking chat UI half finished
+- income UI half finished
+(12-02-2024)
+-------------------------------------------- 
+feature : Porvider App
+- Home
+- income UI
+(13-02-2024)
+--------------------------------------------
+
+black log
+- summary UI half finished
+- noti detail
+- connect point history
+- test case
+- connect API map postal code
+- add account provider
