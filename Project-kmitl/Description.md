@@ -78,7 +78,17 @@ feature : Porvider App
 - Home
 - history ui provider
 - income UI
+- noti list
 (14-02-2024)
+--------------------------------------------
+feature : Porvider App
+- my parking list
+- connect API my parking list
+- connect API history
+- connect API parking management
+- income UI
+- noti list
+(15-02-2024)
 --------------------------------------------
 black log
 - summary UI half finished
