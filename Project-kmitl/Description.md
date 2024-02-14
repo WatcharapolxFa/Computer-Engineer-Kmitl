@@ -71,15 +71,18 @@ feature : Porvider App
 -------------------------------------------- 
 feature : Porvider App
 - Home
-- income UI
+- connect API map postal code
 (13-02-2024)
 --------------------------------------------
-
+feature : Porvider App
+- Home
+- history ui provider
+- income UI
+(14-02-2024)
+--------------------------------------------
 black log
 - summary UI half finished
 - noti detail
 - connect point history
 - test case
-- connect API map postal code
 - add account provider
-- history ui provider
