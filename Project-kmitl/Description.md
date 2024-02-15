@@ -88,6 +88,7 @@ feature : Porvider App
 - connect API parking management
 - income UI
 - noti list
+- accont profile ui
 (15-02-2024)
 --------------------------------------------
 black log
