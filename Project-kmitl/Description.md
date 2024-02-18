@@ -91,9 +91,13 @@ feature : Porvider App
 - accont profile ui
 (15-02-2024)
 --------------------------------------------
+feature : 
+- test case
+(18-02-2024)
+--------------------------------------------
 black log
 - summary UI half finished
 - noti detail
 - connect point history
-- test case
+
 - add account provider
