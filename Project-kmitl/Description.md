@@ -91,13 +91,24 @@ feature : Porvider App
 - accont profile ui
 (15-02-2024)
 --------------------------------------------
+feature : Porvider App
+- notification
+- reward
+- car
+(16-02-2024)
+--------------------------------------------
+feature : Porvider App
+- includes everything including all system exams.
+feature : customer App
+- includes everything including all system exams.
+(17-02-2024)
+--------------------------------------------
 feature : 
+- connect point history
+- - summary UI
 - test case
 (18-02-2024)
 --------------------------------------------
 black log
-- summary UI half finished
 - noti detail
-- connect point history
-
 - add account provider
