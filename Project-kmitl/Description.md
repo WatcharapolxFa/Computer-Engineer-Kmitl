@@ -105,10 +105,14 @@ feature : customer App
 --------------------------------------------
 feature : 
 - connect point history
-- - summary UI
+- summary UI
 - test case
 (18-02-2024)
 --------------------------------------------
-black log
+feature :  Porvider App
 - noti detail
 - add account provider
+- review page 
+- test case
+(19-02-2024)
+--------------------------------------------
