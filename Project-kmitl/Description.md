@@ -110,9 +110,12 @@ feature :
 (18-02-2024)
 --------------------------------------------
 feature :  Porvider App
-- noti detail
-- add account provider
-- review page 
 - test case
 (19-02-2024)
 --------------------------------------------
+- โฉนดใส่ได้สองหน้า  
+- ทำ default ราคากับ ดาวไว้  
+- Ui (คำว่าจองตอนนี้)  aleart หน้าปิดที่อยู่(ใช้คำผิด)
+- noti detail
+- add account provider
+- review page 
