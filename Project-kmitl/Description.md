@@ -115,7 +115,6 @@ feature :  Porvider App
 --------------------------------------------
 - โฉนดใส่ได้สองหน้า  
 - ทำ default ราคากับ ดาวไว้  
-- Ui (คำว่าจองตอนนี้)  aleart หน้าปิดที่อยู่(ใช้คำผิด)
 - noti detail
 - add account provider
 - review page 
