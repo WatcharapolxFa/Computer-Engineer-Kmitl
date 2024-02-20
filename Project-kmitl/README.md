@@ -114,16 +114,17 @@ feature :  Porvider App
 (19-02-2024)
 --------------------------------------------
 feature :  Porvider App
-- test case
-- noti detail screen
 - add account
 - review screen
-fix :
+
+fix : Porvider App
 - โฉนดใส่ได้สองหน้า
-feature : Customer
+fix : Customer
+- ทำ default ราคากับ ดาวไว้
 - reserve sumary
-fix :
-- ทำ default ราคากับ ดาวไว้ 
+- noti detail screen
+
+Test case
 (20-02-2024)
 --------------------------------------------
 
