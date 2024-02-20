@@ -119,15 +119,14 @@ feature :  Porvider App
 
 fix : Porvider App
 - โฉนดใส่ได้สองหน้า
+
 fix : Customer
 - ทำ default ราคากับ ดาวไว้
 - reserve sumary
 - noti detail screen
-
-Test case
 (20-02-2024)
 --------------------------------------------
-
+Test case
  
 
 
