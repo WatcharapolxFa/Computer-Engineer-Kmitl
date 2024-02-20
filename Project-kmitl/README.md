@@ -122,11 +122,12 @@ fix : Porvider App
 
 fix : Customer
 - ทำ default ราคากับ ดาวไว้
-- reserve sumary
-- noti detail screen
+
 (20-02-2024)
 --------------------------------------------
 Test case
+- reserve sumary
+- noti detail screen
  
 
 
