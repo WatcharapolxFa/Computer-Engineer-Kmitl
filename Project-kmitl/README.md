@@ -118,10 +118,12 @@ feature :  Porvider App
 - noti detail screen
 - add account
 - review screen
-fix - โฉนดใส่ได้สองหน้า  
+fix :
+- โฉนดใส่ได้สองหน้า
 feature : Customer
 - reserve sumary
-fix - ทำ default ราคากับ ดาวไว้ 
+fix :
+- ทำ default ราคากับ ดาวไว้ 
 (20-02-2024)
 --------------------------------------------
 
