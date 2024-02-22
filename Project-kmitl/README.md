@@ -128,6 +128,10 @@ feature :
 - test case
 (21-02-2024)
 --------------------------------------------
+feature : 
+- slide presentation
+(22-02-2024)
+--------------------------------------------
 
 - reserve sumary
 - noti detail screen
