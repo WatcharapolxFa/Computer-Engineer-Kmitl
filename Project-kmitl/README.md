@@ -132,7 +132,10 @@ feature :
 - slide presentation
 (22-02-2024)
 --------------------------------------------
-
+feature : 
+- Check project readiness
+02-03-2024)
+--------------------------------------------
 - reserve sumary
 - noti detail screen
  
